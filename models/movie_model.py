@@ -1,8 +1,7 @@
-from pkg_resources import cleanup_resources
 from db import db
 
 
-class Movie(db.Model):
+class MovieModel(db.Model):
     __tablename__ = "movies"
 
     id = db.Column(db.Integer, primary_key=True)

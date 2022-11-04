@@ -1,8 +1,8 @@
 from ma import ma
-from models.movies import Movie
+from models.movie_model import MovieModel
 
 
 class MovieSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
-        model = Movie
+        model = MovieModel
         load_instance = True
